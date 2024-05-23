@@ -14,6 +14,8 @@ forward OnAccountCheck(playerid);
  */
 
 hook OnPlayerRequestClass(playerid, classid) {
+    TogglePlayerSpectating(playerid, true);
+
     new
         query[128]
     ;
