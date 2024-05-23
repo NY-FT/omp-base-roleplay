@@ -145,6 +145,7 @@ static ShowCharacterActionDialog(playerid, slotid) {
 }
 
 static SetCharacterSpawn(playerid, slotid, skinid, Float:x, Float:y, Float:z, Float:a) {
+    TogglePlayerSpectating(playerid, false);
     SetSpawnInfo(playerid, NO_TEAM, skinid, x, y, z, a);
     SetPlayerName(playerid, character[playerid][slotid][E_CHARACTER_NAME]);
     SetCameraBehindPlayer(playerid);
